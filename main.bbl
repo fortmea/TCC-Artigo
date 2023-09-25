@@ -1,0 +1,95 @@
+\begin{thebibliography}{}
+
+\bibitem[Forouzan and Fegan 2018]{forouzan2018comunicacao}
+Forouzan, B.~A. and Fegan, S.~C. (2018).
+\newblock {\em Comunicação de dados e redes de computadores}.
+\newblock AMGH Editora, 7 edition.
+
+\bibitem[Gazzola 2020]{gazzola2020desenvolvimento}
+Gazzola, R. (2020).
+\newblock {\em Desenvolvimento de aplicativos Android: guia pr{\'a}tico e
+  completo}.
+\newblock Novatec Editora.
+
+\bibitem[Jemerov and Isakova 2017]{jemerov2017kotlin}
+Jemerov, D. and Isakova, S. (2017).
+\newblock {\em Kotlin em a{\c{c}}{\~a}o}.
+\newblock Novatec Editora.
+
+\bibitem[Kurose and Ross 2013]{kurose2013computer}
+Kurose, J.~F. and Ross, K.~W. (2013).
+\newblock {\em Redes de Computadores: Uma Abordagem Top-Down}.
+\newblock Pearson Education do Brasil.
+
+\bibitem[Leiva 2019]{leiva2019kotlin}
+Leiva, A. (2019).
+\newblock {\em Kotlin for Android Developers}.
+\newblock Antonio Leiva.
+
+\bibitem[McCarthy and Kandalov 2019]{mccarthy2019kotlin}
+McCarthy, P.~B. and Kandalov, D. (2019).
+\newblock {\em Kotlin for Android App Development}.
+\newblock Packt Publishing.
+
+\bibitem[Moreno~Villamizar et~al. 2019]{moreno2019aplicaccao}
+Moreno~Villamizar, J.~Y., Escalante~Ortega, D.~A., and Siqueira, A. A.~G.
+  (2019).
+\newblock Aplica{\c{c}}{\~a}o de controle remoto usando jogos s{\'e}rios
+  baseado no protocolo de comunica{\c{c}}{\~a}o udp.
+\newblock {\em Anais}.
+
+\bibitem[Neuman and Tsai 2003]{neuman2003redes}
+Neuman, C. and Tsai, T.~M. (2003).
+\newblock {\em Redes de Computadores e a Internet}.
+\newblock Campus.
+
+\bibitem[Picoli 2011]{picoli2011arquitetura}
+Picoli, I.~L. (2011).
+\newblock Arquitetura cliente-servidor em jogos multiplayer.
+\newblock {B.S.} thesis, Universidade Tecnol{\'o}gica Federal do Paran{\'a}.
+
+\bibitem[Sarkar et~al. 2020]{sarkar2020android}
+Sarkar, N., Ho, O., and John, N. (2020).
+\newblock {\em Android Studio 4.1 Development Essentials - Java Edition:
+  Developing Android Apps Using Android Studio 4.1, Java and Kotlin}.
+\newblock Payload Media.
+
+\bibitem[Saunders et~al. 2013]{saunders_fields_belayev_2013}
+Saunders, S., Fields, D.~K., and Belayev, E. (2013).
+\newblock {\em IntelliJ Idea in Action}.
+\newblock HANNING.
+
+\bibitem[Silva~Filho 2017]{silva2017desenvolvimento}
+Silva~Filho, G. L. F.~d. (2017).
+\newblock Desenvolvimento de aplicativo para ado{\c{c}}{\~a}o de animais
+  abandonados utilizando a linguagem de programa{\c{c}}{\~a}o kotlin e
+  programa{\c{c}}{\~a}o reativa.
+\newblock {B.S.} thesis, Universidade Tecnol{\'o}gica Federal do Paran{\'a}.
+
+\bibitem[Smyth 2020]{smyth2020android}
+Smyth, N. (2020).
+\newblock {\em Android Studio 4.0 Development Essentials-Kotlin Edition}.
+\newblock eBookFrenzy.
+
+\bibitem[Stallings 2017]{stallings2017redes}
+Stallings, W. (2017).
+\newblock {\em Redes e sistemas de comunicação de dados: teoria e
+  aplicações}.
+\newblock AMGH Editora, 7 edition.
+
+\bibitem[Stevens and Wright 2011]{stevens2011tcp}
+Stevens, W.~R. and Wright, G.~R. (2011).
+\newblock {\em TCP/IP Illustrated}, volume~1.
+\newblock Addison-Wesley.
+
+\bibitem[Subramaniam 2017]{subramaniam2017programming}
+Subramaniam, V. (2017).
+\newblock {\em Programming Kotlin}.
+\newblock Pragmatic Bookshelf.
+
+\bibitem[Tanenbaum and Wetherall 2011]{tanenbaum2011redes}
+Tanenbaum, A.~S. and Wetherall, D. (2011).
+\newblock {\em Redes de computadores}.
+\newblock Pearson, 5 edition.
+
+\end{thebibliography}
