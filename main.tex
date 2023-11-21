@@ -56,9 +56,9 @@ A tecnologia de redes de computadores tem evoluído significativamente nas últi
 
 Uma das tecnologias que permitem a transmissão de dados em tempo real é o User Datagram Protocol (UDP), que é um protocolo de transporte da camada de transporte do modelo OSI. O UDP oferece um mecanismo eficiente e rápido para transmitir dados pela rede, sem as restrições e sobrecargas adicionais do Transmission Control Protocol (TCP). Isso torna o UDP uma opção atraente para aplicativos que precisam de baixa latência e tempo de resposta rápido, como jogos em tempo real.
 
-Neste trabalho, será explorada a tecnologia UDP, desenvolvendo um aplicativo de jogo da velha em tempo real que permitirá que os usuários criem salas e joguem o jogo com outros jogadores conectados ao servidor. O aplicativo será desenvolvido em Kotlin para Android, e o servidor em Kotlin, implementando as funcionalidades necessárias para gerenciar as conexões entre os jogadores, transmitir as mensagens de jogo e garantir a integridade dos dados transmitidos.
+Neste trabalho, exploramos a tecnologia UDP, desenvolvendo um aplicativo de jogo da velha em tempo real que permite que os usuários criem salas e joguem o jogo com outros jogadores conectados ao servidor. O aplicativo foi desenvolvido em Kotlin para Android, e o servidor em Kotlin, implementando as funcionalidades necessárias para gerenciar as conexões entre os jogadores, transmitir as mensagens de jogo e garantir a integridade dos dados transmitidos.
 
-Por fim, os protocolos TCP e UDP serão comparados utilizando o conhecimento obtido durante o desenvolvimento do projeto de aplicativo, a fim de demonstrar efetivamente as vantagens do protocolo UDP para comunicação em tempo real.
+Por fim, os protocolos TCP e UDP são comparados utilizando o conhecimento obtido durante o desenvolvimento do projeto de aplicativo, a fim de demonstrar efetivamente as vantagens do protocolo UDP para comunicação em tempo real.
 
 \section{Fundamentação Teórica} \label{sec:firstpage}
 
@@ -142,33 +142,33 @@ De acordo com \cite{jemerov2017kotlin}, o Kotlin funciona muito bem com todas as
 \subsection{Android Studio}
 De acordo com\cite{smyth2020android}, O desenvolvimento de aplicativos para o Android envolve uma quantidade considerável de trabalho de programação, que, por definição, envolve digitar, revisar e modificar linhas de código. Não é surpresa que a maioria do tempo de um desenvolvedor usando o Android Studio seja gasto editando código na janela do editor. O editor de código moderno precisa ir muito além dos princípios básicos de digitar, excluir, cortar e colar. Hoje, a utilidade de um editor de código é geralmente avaliada por fatores como a quantidade pela qual reduz a digitação necessária pelo programador, a facilidade de navegação por grandes arquivos de código-fonte e a capacidade do editor de detectar e destacar erros de programação em tempo real, enquanto o código está sendo escrito. Como ficará evidente neste capítulo, esses são apenas alguns dos aspectos em que o editor do Android Studio se destaca. Embora não seja uma visão geral exaustiva dos recursos do editor do Android Studio. Programadores experientes descobrirão que alguns desses recursos são comuns à maioria dos editores de código disponíveis hoje, enquanto outros são exclusivos deste ambiente de edição particular.
 
-Com base nessas características, será feita a instalação do JDK, IntelliJ IDEA e Android Studio no computador. Em seguida, foi criado um novo projeto Kotlin no IntelliJ IDEA, que servirá como servidor para nossa aplicação Android, o cliente. Criamos também o projeto do aplicativo Android no Android Studio
+Com base nessas características, foi feita a instalação do JDK, IntelliJ IDEA e Android Studio no computador. Em seguida, criamos um novo projeto Kotlin no IntelliJ IDEA, que serve como servidor para nossa aplicação Android, o cliente. Criamos também o projeto do aplicativo Android no Android Studio
 
 \section{Desenvolvimento}
- O trabalho presente tem como objetivo demonstrar a tecnologia UDP através do desenvolvimento de um aplicativo de jogo da velha em tempo real, que permitirá que os usuários criem salas e joguem o jogo com outros jogadores conectados ao servidor. Para isso, será desenvolvido um aplicativo para Android e um servidor, ambos utilizando a linguagem Kotlin.
+O trabalho presente tem como objetivo demonstrar a tecnologia UDP por meio do desenvolvimento de um aplicativo de jogo da velha em tempo real. Isso permite que os usuários criem salas e joguem o jogo com outros jogadores conectados ao servidor. Para alcançar esse objetivo, desenvolvemos um aplicativo para Android e um servidor, ambos utilizando a linguagem Kotlin.
 
-O primeiro passo do processo de desenvolvimento será a definição dos requisitos do projeto. Será fundamental determinar quais serão as funcionalidades que o aplicativo deverá ter para atender aos objetivos do projeto, como a criação de salas, a conexão entre clientes, a transmissão de mensagens em tempo real e a jogabilidade do jogo da velha.
+O primeiro passo do processo de desenvolvimento foi a definição dos requisitos do projeto. Foi fundamental determinar as funcionalidades que o aplicativo deveria ter para atender aos objetivos do projeto, como a criação de salas, a conexão entre clientes, a transmissão de mensagens em tempo real e a jogabilidade do jogo da velha.
 
-Para o desenvolvimento do aplicativo, foi escolhido o Android Studio e a linguagem Kotlin. Para o servidor, foi optado pela biblioteca Ktor e Kotlin. Além disso, para implementar o protocolo UDP, será necessário utilizar a API DatagramSocket.
+Para o desenvolvimento do aplicativo, escolhemos o Android Studio e a linguagem Kotlin. Para o servidor, optamos pela biblioteca Ktor e Kotlin. Além disso, para implementar o protocolo UDP, utilizamos a API DatagramSocket.
 
-O próximo passo será o desenvolvimento do servidor em Kotlin, que deverá receber as conexões dos clientes e gerenciar as salas de jogo. Para isso, serão implementadas as funcionalidades de criação de salas, conexão e desconexão de clientes, além de garantir que as mensagens sejam enviadas de forma segura e em tempo real usando o protocolo UDP.
+O próximo passo foi o desenvolvimento do servidor em Kotlin, que recebe as conexões dos clientes e gerencia as salas de jogo. Implementamos as funcionalidades de criação de salas, conexão e desconexão de clientes, além de garantir que as mensagens fossem enviadas de forma segura e em tempo real usando o protocolo UDP.
 
-O desenvolvimento do aplicativo será a próxima etapa, que permitirá que os usuários se conectem ao servidor e joguem o jogo da velha em tempo real. O aplicativo deverá ser intuitivo e fácil de usar, permitindo que os usuários criem e se juntem a salas de jogo, e joguem o jogo da velha de forma fluida e eficiente.
+O desenvolvimento do aplicativo foi a etapa seguinte, permitindo que os usuários se conectem ao servidor e joguem o jogo da velha em tempo real. O aplicativo foi projetado para ser intuitivo e fácil de usar, permitindo que os usuários criem e se juntem a salas de jogo, e joguem o jogo da velha de forma fluida e eficiente.
 
-Após o desenvolvimento do aplicativo e do servidor, será necessário testar e depurar o sistema para garantir que ele esteja funcionando corretamente. Será necessário testar todas as funcionalidades, incluindo a conexão com o servidor, e a jogabilidade do jogo da velha.
+Após o desenvolvimento do aplicativo e do servidor, realizamos testes e depuração do sistema para garantir que estivesse funcionando corretamente. Testamos todas as funcionalidades, incluindo a conexão com o servidor e a jogabilidade do jogo da velha.
 
-Além disso, também serão desenvolvidos um outro conjunto de aplicações, com o intuito de comparar sinteticamente os protocolos UDP e TCP.
+Além disso, desenvolvemos outro conjunto de aplicações com o intuito de comparar sinteticamente os protocolos UDP e TCP.
 
-Com os testes e depuração concluídos, é hora de implementar as funcionalidades finais do aplicativo e do servidor, incluindo melhorias da interface do usuário e o aprimoramento do desempenho.
+Com os testes e depuração concluídos, implementamos as funcionalidades finais do aplicativo e do servidor, incluindo melhorias na interface do usuário e o aprimoramento do desempenho.
 
-Finalmente, o projeto será entregue com toda a documentação do processo de desenvolvimento, desde o planejamento até a entrega do projeto. O relatório final incluirá todas as etapas do projeto, as tecnologias e ferramentas utilizadas, bem como os resultados alcançados. Com isso, espera-se demonstrar a tecnologia UDP e seu uso em aplicativos móveis em tempo real.
+O código fonte do projeto está disponível no GitHub em  https://github.com/fortmea/apptcc para o aplicativo e https://github.com/fortmea/servidortcc para o servidor.
 
-\section{Cronograma}
+\section{Resultados}
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=1\textwidth]{cron.png}
-\caption{Cronograma do desenvolvimento do projeto}
+\includegraphics[width=1\textwidth]{grafico_ms.png}
+\caption{Tempo de Resposta por Protocolo e Tamanho do Pacote}
 \label{fig:cronogramafig}
 \end{figure}
 
