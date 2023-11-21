@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.9.25)  20 NOV 2023 23:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.9.25)  21 NOV 2023 10:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -243,37 +243,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 164--165
 \OT1/ptm/m/n/12 em https://github.com/fortmea/apptcc para o apli-ca-tivo e
  []
 
-<grafico_ms.png, id=31, 1387.584pt x 698.8509pt>
-File: grafico_ms.png Graphic file (type png)
-<use grafico_ms.png>
-Package pdftex.def Info: grafico_ms.png  used on input line 170.
-(pdftex.def)             Requested size: 426.79135pt x 214.94603pt.
+
+Underfull \hbox (badness 2134) in paragraph at lines 164--165
+\OT1/ptm/m/n/12 https://github.com/fortmea/servidortcc para o ser-vi-dor. O c[]odigo para os tes-tes
+ []
+
+<tela_jogo.png, id=31, 1084.05pt x 2228.325pt>
+File: tela_jogo.png Graphic file (type png)
+<use tela_jogo.png>
+Package pdftex.def Info: tela_jogo.png  used on input line 170.
+(pdftex.def)             Requested size: 213.39568pt x 438.6188pt.
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 171.
 (C:\Users\joaow\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
-) (main.bbl
+) [8 <./tela_jogo.png>]
+<tela_menu.png, id=38, 1084.05pt x 2288.55pt>
+File: tela_menu.png Graphic file (type png)
+<use tela_menu.png>
+Package pdftex.def Info: tela_menu.png  used on input line 177.
+(pdftex.def)             Requested size: 213.39568pt x 450.47337pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9 <./tela_menu.png>]
+<tela_menu2.png, id=43, 1084.05pt x 2288.55pt>
+File: tela_menu2.png Graphic file (type png)
+<use tela_menu2.png>
+Package pdftex.def Info: tela_menu2.png  used on input line 184.
+(pdftex.def)             Requested size: 213.39568pt x 450.47337pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10 <./tela_menu2.png>]
+<grafico_2.png, id=48, 462.528pt x 346.896pt>
+File: grafico_2.png Graphic file (type png)
+<use grafico_2.png>
+Package pdftex.def Info: grafico_2.png  used on input line 196.
+(pdftex.def)             Requested size: 426.79135pt x 320.11154pt.
+ [11 <./grafico_2.png>] (main.bbl
 Underfull \hbox (badness 2644) in paragraph at lines 35--40
 \OT1/ptm/m/n/12 Aplica[][]ao de con-trole re-moto usando jo-gos s[]erios ba-se-ado no pro-to-colo de
  []
 
-[8 <./grafico_ms.png>]) [9] (main.aux)
+[12]) [13] (main.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4257 strings out of 475248
- 72610 string characters out of 5757813
+ 4281 strings out of 475248
+ 73066 string characters out of 5757813
  1935785 words of memory out of 5000000
- 25712 multiletter control sequences out of 15000+600000
+ 25736 multiletter control sequences out of 15000+600000
  575462 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,10n,79p,1308b,367s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/joaow/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/joaow/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/joaow/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/joaow/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/joaow/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/joaow/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/joaow/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/joaow/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (9 pages, 170699 bytes).
+Output written on main.pdf (13 pages, 287184 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
+ 95 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

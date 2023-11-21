@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1700535406 "main.aux" "main.bbl" "main" 1700535411 0
+["bibtex main"] 1700574494 "main.aux" "main.bbl" "main" 1700574551 0
   "./sbc-template.bib" 1695681290 3351 ae98a9433b4fa972be918bf5a19a9dda ""
   "./sbc.bst" 1695681290 21863 e2f961827e28074ef5a2bc27ccb7b310 ""
-  "main.aux" 1700535410 4318 c3a35e15ddfc63541365730050b8066d "pdflatex"
+  "main.aux" 1700574550 5373 361ce9e51d7a9503c222b26511cd1ac7 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1700535410 "c:/Users/joaow/Documents/GitHub/TCC-Artigo/main.tex" "main.pdf" "main" 1700535411 0
+["pdflatex"] 1700574550 "c:/Users/joaow/Documents/GitHub/TCC-Artigo/main.tex" "main.pdf" "main" 1700574551 0
   "C:/Users/joaow/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1700535030 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/joaow/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1695681967 24141908 8d6fdfdf40b27ec8afed0279d0c18e6f ""
   "C:/Users/joaow/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -82,13 +82,16 @@
   "C:/Users/joaow/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/times.sty" 1585926771 888 8e0e5c8cca7b18e0400f97f5a2b90a99 ""
   "C:/Users/joaow/AppData/Local/Programs/MiKTeX/tex/latex/titlesec/titlesec.sty" 1625497667 48833 3b7b4cfab1a3d15596bfd3772a77ab65 ""
   "C:/Users/joaow/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/joaow/Documents/GitHub/TCC-Artigo/main.tex" 1700535409 23650 f1e41a0e86fb6e00467c7345da10921d ""
+  "c:/Users/joaow/Documents/GitHub/TCC-Artigo/main.tex" 1700574549 26901 69f9a25fc423f1b07bded85b6e128e0c ""
   "caption2.sty" 1695681290 15189 50845fba222dc25666abc3397b231fab ""
-  "grafico_ms.png" 1700533146 46835 ee764362df61fd908181e9efe9639ba6 ""
-  "main.aux" 1700535410 4318 c3a35e15ddfc63541365730050b8066d "pdflatex"
-  "main.bbl" 1700535406 3446 196388163a35115034a05bf552d15277 "bibtex main"
-  "main.tex" 1700535409 23650 f1e41a0e86fb6e00467c7345da10921d ""
+  "grafico_2.png" 1700574212 30229 ec985d01b1951eb6b6d2e742518a3667 ""
+  "main.aux" 1700574550 5373 361ce9e51d7a9503c222b26511cd1ac7 "pdflatex"
+  "main.bbl" 1700574495 3446 196388163a35115034a05bf552d15277 "bibtex main"
+  "main.tex" 1700574549 26901 69f9a25fc423f1b07bded85b6e128e0c ""
   "sbc-template.sty" 1695681290 5280 0a277450ee6cfc82a68e4b0b0f92e15e ""
+  "tela_jogo.png" 1700572235 50544 8735aa604df291a492601a8f969f4502 ""
+  "tela_menu.png" 1700572262 52267 2c97f86da3d434e0449b8b26f79dc8ea ""
+  "tela_menu2.png" 1700572266 59121 ebba3317288403f7a846654a8eadd522 ""
   (generated)
   "main.aux"
   "main.log"

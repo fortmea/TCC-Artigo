@@ -24,18 +24,16 @@ for i in range(len(tamanhos_pacote)):
              [tempos_tcp[i], tempos_udp[i]], color='gray', linestyle='--', linewidth=1)
     diferenca = tempos_udp[i] - tempos_tcp[i]
     plt.text(posicoes_tcp[i] + largura_barra / 2, (tempos_tcp[i] + tempos_udp[i]) / 2, f'{diferenca} ms',
-             ha='center', va='center', bbox=dict(facecolor='white', edgecolor='white', boxstyle='round'))
+             ha='center', va='center', bbox=dict(facecolor='white', edgecolor='white', boxstyle='round'),
+             fontsize=14)  # Ajuste o tamanho da fonte aqui
 
-# Adicionar rótulos e título
-plt.xlabel('Tamanho do Pacote (Bytes)')
-plt.ylabel('Tempo de Resposta (ms)')
-plt.title('Tempo de Resposta por Protocolo e Tamanho do Pacote')
-
-# Adicionar rótulos no eixo X
-plt.xticks(posicoes_tcp + largura_barra / 2, tamanhos_pacote)
-
-# Adicionar legenda
-plt.legend()
+# Ajustar tamanho das fontes
+plt.xlabel('Tamanho do Pacote (Bytes)', fontsize=10)
+plt.ylabel('Tempo de Resposta (ms)', fontsize=10)
+plt.title('Tempo de Resposta por Protocolo e Tamanho do Pacote', fontsize=12)
+plt.xticks(posicoes_tcp + largura_barra / 2, tamanhos_pacote, fontsize=8)  # Ajuste o tamanho da fonte aqui
+plt.yticks(fontsize=14)  # Ajuste o tamanho da fonte aqui
+plt.legend(fontsize=14)  # Ajuste o tamanho da fonte aqui
 
 # Exibir o gráfico
 plt.show()

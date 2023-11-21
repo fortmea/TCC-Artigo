@@ -161,16 +161,55 @@ Além disso, desenvolvemos outro conjunto de aplicações com o intuito de compa
 
 Com os testes e depuração concluídos, implementamos as funcionalidades finais do aplicativo e do servidor, incluindo melhorias na interface do usuário e o aprimoramento do desempenho.
 
-O código fonte do projeto está disponível no GitHub em  https://github.com/fortmea/apptcc para o aplicativo e https://github.com/fortmea/servidortcc para o servidor.
+O código fonte do projeto está disponível no GitHub em  https://github.com/fortmea/apptcc para o aplicativo e https://github.com/fortmea/servidortcc para o servidor. O código para os testes acompanham seus respectivos projetos.
 
 \section{Resultados}
+\subsection{Jogo da Velha}
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.5\textwidth]{tela_jogo.png}
+\caption{Jogo em andamento. O jogador X já venceu 2 partidas.}
+\label{fig:jogofig1}
+\end{figure}
+\break
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.5\textwidth]{tela_menu.png}
+\caption{Menu do jogo. Podemos criar novas salas ou entrar em salas existentes.}
+\label{fig:jogofig2}
+\end{figure}
+\break
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.5\textwidth]{tela_menu2.png}
+\caption{Menu do jogo após criarmos uma nova sala}
+\label{fig:jogofig3}
+\end{figure}
+O app de jogo da velha foi desenvolvido com sucesso, cumprindo com as funcionalidades esperadas. Também cumpriu para seu propósito de estabelecer uma base necessária para os testes que foram feitos a seguir.
+Na {\bf Figura \ref{fig:jogofig1}} podemos ver o jogo em andamento. O jogador X já venceu 2 partidas. Na {\bf Figura \ref{fig:jogofig2}} podemos ver o menu do jogo. Podemos criar novas salas ou entrar em salas existentes. Na {\bf Figura \ref{fig:jogofig3}} podemos ver o menu do jogo após criarmos uma nova sala.
+
+\break
+\subsection{Testes sintéticos}
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=1\textwidth]{grafico_ms.png}
-\caption{Tempo de Resposta por Protocolo e Tamanho do Pacote}
-\label{fig:cronogramafig}
+\includegraphics[width=1\textwidth]{grafico_2.png}
+\caption{Tempo de Resposta por Protocolo e Tamanho do Pacote. Em amarelo, UDP. Em azul, TCP. Em todos os casos testados, o UDP apresentou menor tempo de resposta.}
+\label{fig:graficofig}
 \end{figure}
+
+Durante a execução dos testes, notou-se que o UDP apresentou menor tempo de resposta em todos os casos testados. Na {\bf Figura \ref{fig:graficofig}} podemos ver o gráfico de tempo de resposta por protocolo e tamanho do pacote.
+
+Em alguns casos, especialmente com tamanho maior de pacote, o TCP apresentou um tempo de resposta muito maior do que o UDP, chegando a ser duas vezes maior. Isso pode ser explicado pelo fato de que o TCP é um protocolo orientado a conexão, enquanto o UDP é um protocolo sem conexão. Isso significa que o TCP precisa estabelecer uma conexão antes de iniciar a transmissão de dados, enquanto o UDP não precisa. Isso pode levar a um tempo de resposta maior para o TCP, especialmente quando o tamanho do pacote é maior.
+
+Os testes foram executados em uma única máquina, sem se conectar com a internet ou com outros dispositivos. Assim, esperamos ter reduzido qualquer influência externa nos resultados. No entanto, é importante notar que os resultados podem variar dependendo do ambiente de rede e do hardware utilizado. Nesse caso, os testes foram executados em uma máquina com um processador Ryzen 5 5600 e 16GB de memória RAM.
+
+\section{Conclusão}
+O objetivo deste trabalho foi apresentar a arquitetura UDP e suas principais características, e através de um caso de uso prático - desenvolver um jogo multiplayer para Android utilizando Kotlin, com a implementação de um servidor UDP também em Kotlin, e com o conhecimento obtido implementar uma metodologia para comparar a arquitetura UDP com TCP. 
+Foram abordados conceitos fundamentais da arquitetura UDP, bem como suas vantagens e limitações. O jogo desenvolvido teve como objetivo demonstrar as possibilidades e benefícios do uso de UDP em aplicações que exigem baixa latência e alta performance. E os testes sintéticos realizados demonstraram que o UDP apresentou menor tempo de resposta em todos os casos testados.
+
+
+
 
 \bibliographystyle{sbc}
 \bibliography{sbc-template}
