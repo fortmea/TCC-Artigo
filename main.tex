@@ -16,12 +16,13 @@
 
 \usepackage{sbc-template}
 
-\usepackage{graphicx,url}
-
+\usepackage{graphicx}
 \usepackage[brazil]{babel}   
 \usepackage[utf8]{inputenc}  
-
-     
+\usepackage{placeins}
+\usepackage{subfigure}
+\usepackage{float}
+\usepackage{cleveref}
 \sloppy
 
 \title{Explorando as Capacidades da Arquitetura UDP no\\ Desenvolvimento de Jogos Multiplayer para Android}
@@ -36,18 +37,16 @@ Bairro Água do Cateto, Ourinhos-SP. CEP 19909-100
 }
 
 
-\begin{document} 
+\begin{document}
 
 \maketitle
 
 \begin{abstract}
-  The objective of this paper is to present the User Datagram Protocol (UDP) architecture and its main characteristics, through a real world use case - to develop a multiplayer game for Android using Kotlin, with the implementation of an UDP server also in Kotlin, and with the knowledge gathered through it, develop a methodology to compare the UDP architecture to TCP. Fundamental concepts of UDP architecture will be addressed, as well as its advantages and limitations. The goal of the developed game is to demonstrate the possibilities and benefits of using UDP in applications that require low latency and high performance.
+  The present paper presents the User Datagram Protocol (UDP) architecture and its main characteristics, and through a practical use case - a multiplayer game for Android using Kotlin, with the implementation of a UDP server also in Kotlin, and with the knowledge obtained, it implements a methodology and compares the UDP architecture with TCP. Fundamental concepts of the UDP architecture are addressed, as well as its advantages and limitations. The developed game aims to demonstrate the possibilities and benefits of using UDP in applications that require low latency and high performance.
 \end{abstract}
-     
-\begin{resumo} 
-  
-O objetivo deste trabalho é apresentar a arquitetura User
-Datagram Protocol (UDP) e suas principais características, e atráves de um caso de uso prático - desenvolver um jogo multiplayer para Android utilizando Kotlin, com a implementação de um servidor UDP também em Kotlin, e com o conhecimento obtido implementar uma metodologia para comparar a arquitetura UDP com TCP. Serão abordados conceitos fundamentais da arquitetura UDP, bem como suas vantagens e limitações. O jogo a ser desenvolvido terá como objetivo demonstrar as possibilidades e benefícios do uso de UDP em aplicações que exigem baixa latência e alta performance.
+
+\begin{resumo}
+  O trabalho presente apresenta a arquitetura User Datagram Protocol (UDP) e suas principais características, e atráves de um caso de uso prático - um jogo multiplayer para Android utilizando Kotlin, com a implementação de um servidor UDP também em Kotlin, e com o conhecimento obtido implementa uma metodologia e compara a arquitetura UDP com TCP. São abordados conceitos fundamentais da arquitetura UDP, bem como suas vantagens e limitações. O jogo desenvolvido tem como objetivo demonstrar as possibilidades e benefícios do uso de UDP em aplicações que exigem baixa latência e alta performance.
 \end{resumo}
 
 
@@ -144,9 +143,7 @@ De acordo com\cite{smyth2020android}, O desenvolvimento de aplicativos para o An
 
 Com base nessas características, foi feita a instalação do JDK, IntelliJ IDEA e Android Studio no computador. Em seguida, criamos um novo projeto Kotlin no IntelliJ IDEA, que serve como servidor para nossa aplicação Android, o cliente. Criamos também o projeto do aplicativo Android no Android Studio
 
-\section{Desenvolvimento}
-O trabalho presente tem como objetivo demonstrar a tecnologia UDP por meio do desenvolvimento de um aplicativo de jogo da velha em tempo real. Isso permite que os usuários criem salas e joguem o jogo com outros jogadores conectados ao servidor. Para alcançar esse objetivo, desenvolvemos um aplicativo para Android e um servidor, ambos utilizando a linguagem Kotlin.
-
+\section{Materiais e métodos}
 O primeiro passo do processo de desenvolvimento foi a definição dos requisitos do projeto. Foi fundamental determinar as funcionalidades que o aplicativo deveria ter para atender aos objetivos do projeto, como a criação de salas, a conexão entre clientes, a transmissão de mensagens em tempo real e a jogabilidade do jogo da velha.
 
 Para o desenvolvimento do aplicativo, escolhemos o Android Studio e a linguagem Kotlin. Para o servidor, optamos pela biblioteca Ktor e Kotlin. Além disso, para implementar o protocolo UDP, utilizamos a API DatagramSocket.
@@ -159,45 +156,39 @@ Após o desenvolvimento do aplicativo e do servidor, realizamos testes e depura�
 
 Além disso, desenvolvemos outro conjunto de aplicações com o intuito de comparar sinteticamente os protocolos UDP e TCP.
 
+Os testes consistem em enviar pacotes de dados de um dispositivo para outro, utilizando os protocolos UDP e TCP 4000 vezes e então calculando a média de tempo. O tempo foi contado no aplicativo de testes, iniciando a contagem após o envio do pacote e então parando após receber uma resposta. 
+Após isso, o app exibe os resultados no console do Android Studio
+
 Com os testes e depuração concluídos, implementamos as funcionalidades finais do aplicativo e do servidor, incluindo melhorias na interface do usuário e o aprimoramento do desempenho.
 
 O código fonte do projeto está disponível no GitHub em  https://github.com/fortmea/apptcc para o aplicativo e https://github.com/fortmea/servidortcc para o servidor. O código para os testes acompanham seus respectivos projetos.
 
 \section{Resultados}
+Neste capítulo, apresentamos os resultados obtidos durante o desenvolvimento do projeto. Primeiro, descrevemos as funcionalidades do aplicativo. Em seguida, apresentamos os resultados dos testes sintéticos realizados para comparar os protocolos UDP e TCP.
 \subsection{Jogo da Velha}
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.5\textwidth]{tela_jogo.png}
-\caption{Jogo em andamento. O jogador X já venceu 2 partidas.}
-\label{fig:jogofig1}
-\end{figure}
-\break
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.5\textwidth]{tela_menu.png}
-\caption{Menu do jogo. Podemos criar novas salas ou entrar em salas existentes.}
-\label{fig:jogofig2}
-\end{figure}
-\break
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.5\textwidth]{tela_menu2.png}
-\caption{Menu do jogo após criarmos uma nova sala}
-\label{fig:jogofig3}
-\end{figure}
 O app de jogo da velha foi desenvolvido com sucesso, cumprindo com as funcionalidades esperadas. Também cumpriu para seu propósito de estabelecer uma base necessária para os testes que foram feitos a seguir.
-Na {\bf Figura \ref{fig:jogofig1}} podemos ver o jogo em andamento. O jogador X já venceu 2 partidas. Na {\bf Figura \ref{fig:jogofig2}} podemos ver o menu do jogo. Podemos criar novas salas ou entrar em salas existentes. Na {\bf Figura \ref{fig:jogofig3}} podemos ver o menu do jogo após criarmos uma nova sala.
-
-\break
-\subsection{Testes sintéticos}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{grafico_2.png}
-\caption{Tempo de Resposta por Protocolo e Tamanho do Pacote. Em amarelo, UDP. Em azul, TCP. Em todos os casos testados, o UDP apresentou menor tempo de resposta.}
-\label{fig:graficofig}
+Na {\bf Figura \ref{subfig:jogofig1}} podemos ver o jogo em andamento. O jogador X já venceu 2 partidas. Também podemos ver o menu do jogo, onde o usuário pode criar novas salas ou entrar em salas existentes. E podemos ver o menu do jogo após criarmos uma nova sala.
+\begin{figure}[h]
+  
+  \subfigure[Jogo em andamento. O jogador X já venceu 2 partidas.]{\includegraphics[width=0.3\textwidth]{tela_jogo.png}}{\label{subfig:jogofig1}}
+  \hfill
+  \subfigure[Menu do jogo. Podemos criar novas salas ou entrar em salas existentes.]{\includegraphics[width=0.3\textwidth]{tela_menu.png}}{\label{subfig:jogofig2}}
+  \hfill
+  \subfigure[Menu do jogo após criarmos uma nova sala]{\includegraphics[width=0.3\textwidth]{tela_menu2.png}}{\label{subfig:jogofig3}}
 \end{figure}
 
+O App demonstra a possibilidade de se criar um jogo multiplayer em tempo real utilizando a arquitetura UDP, como funcionalidades necessárias para gerenciar as conexões entre os jogadores e transmitir as mensagens de jogo.
+
+\FloatBarrier
+\subsection{Testes sintéticos}
+Os testes sintéticos evidenciaram a superioridade do UDP em relação ao TCP em termos de tempo de resposta, essencial para jogos online. Na {\bf Figura \ref{fig:graficofig}} podemos ver o gráfico de tempo de resposta por protocolo e tamanho do pacote.
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=1\textwidth]{grafico_2.png}
+  \caption{Tempo de Resposta por Protocolo e Tamanho do Pacote. Em amarelo, UDP. Em azul, TCP. Em todos os casos testados, o UDP apresentou menor tempo de resposta.}
+  \label{fig:graficofig}
+\end{figure}
+\FloatBarrier
 Durante a execução dos testes, notou-se que o UDP apresentou menor tempo de resposta em todos os casos testados. Na {\bf Figura \ref{fig:graficofig}} podemos ver o gráfico de tempo de resposta por protocolo e tamanho do pacote.
 
 Em alguns casos, especialmente com tamanho maior de pacote, o TCP apresentou um tempo de resposta muito maior do que o UDP, chegando a ser duas vezes maior. Isso pode ser explicado pelo fato de que o TCP é um protocolo orientado a conexão, enquanto o UDP é um protocolo sem conexão. Isso significa que o TCP precisa estabelecer uma conexão antes de iniciar a transmissão de dados, enquanto o UDP não precisa. Isso pode levar a um tempo de resposta maior para o TCP, especialmente quando o tamanho do pacote é maior.
@@ -205,7 +196,7 @@ Em alguns casos, especialmente com tamanho maior de pacote, o TCP apresentou um 
 Os testes foram executados em uma única máquina, sem se conectar com a internet ou com outros dispositivos. Assim, esperamos ter reduzido qualquer influência externa nos resultados. No entanto, é importante notar que os resultados podem variar dependendo do ambiente de rede e do hardware utilizado. Nesse caso, os testes foram executados em uma máquina com um processador Ryzen 5 5600 e 16GB de memória RAM.
 
 \section{Conclusão}
-O objetivo deste trabalho foi apresentar a arquitetura UDP e suas principais características, e através de um caso de uso prático - desenvolver um jogo multiplayer para Android utilizando Kotlin, com a implementação de um servidor UDP também em Kotlin, e com o conhecimento obtido implementar uma metodologia para comparar a arquitetura UDP com TCP. 
+O objetivo deste trabalho foi apresentar a arquitetura UDP e suas principais características, e através de um caso de uso prático - desenvolver um jogo multiplayer para Android utilizando Kotlin, com a implementação de um servidor UDP também em Kotlin, e com o conhecimento obtido implementar uma metodologia para comparar a arquitetura UDP com TCP.
 Foram abordados conceitos fundamentais da arquitetura UDP, bem como suas vantagens e limitações. O jogo desenvolvido teve como objetivo demonstrar as possibilidades e benefícios do uso de UDP em aplicações que exigem baixa latência e alta performance. E os testes sintéticos realizados demonstraram que o UDP apresentou menor tempo de resposta em todos os casos testados.
 
 
